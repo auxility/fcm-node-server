@@ -1,0 +1,12 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t auxility/fcm-node-server ./server/
+script:
+  - docker images auxility/fcm-node-server
+deploy:
+  provider: script
+  script: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin && docker push auxility/fcm-node-server
+  on:
+    branch: master

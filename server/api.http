@@ -1,0 +1,35 @@
+# Request Documentation
+#
+
+### Get request with a header
+GET http://{{host}}:4000/
+Accept: application/json
+
+### Send POST request with json body
+POST http://{{host}}:4000/users/testUser/devices
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "token": "111"
+}
+
+### DELETE
+DELETE http://{{host}}:4000/users/testUser/devices/111
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+
+### Send POST request with json body
+POST http://{{host}}:4000/users/testUser/messages
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "notification": {
+    "title": "hello",
+    "body": "world"
+  }
+}
+
+###
