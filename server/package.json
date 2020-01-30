@@ -25,8 +25,7 @@
     "@types/redis": "^2.8.14",
     "@types/request-promise": "^4.1.45",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.4",
-    "nodemon": "^2.0.2"
+    "typescript": "^3.7.4"
   },
   "dependencies": {
     "express": "^4.17.1",

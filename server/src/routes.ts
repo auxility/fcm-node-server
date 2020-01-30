@@ -25,6 +25,7 @@ export default ({app, redis}: RoutesInput) => {
     app.get('/', async (req: Request, res: Response) => {
         return res.json({
             success: true,
+            name: process.env.npm_package_name,
             version: process.env.npm_package_version,
             redis_connected: redis.connected
         });

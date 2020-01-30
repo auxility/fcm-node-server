@@ -13,7 +13,7 @@ const errorHandler = require('node-error-handler');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const PORT = process.env.PORT!;
+const PORT = process.env.PORT || 80;
 const REDIS_URL = process.env.RURL!;
 
 const client = redis.createClient(REDIS_URL);
