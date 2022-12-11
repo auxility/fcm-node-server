@@ -28,7 +28,7 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-async-errors": "^3.1.1",
     "firebase-admin": "^8.9.1",
     "node-error-handler": "^1.1.2",
